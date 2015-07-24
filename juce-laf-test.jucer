@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="MeVkRF" name="juce-laf-test" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.sfl.jucelaftest" includeBinaryInAppConfig="1"
+              jucerVersion="3.2.0" companyName="Seventy Four Laboratories"
+              companyWebsite="http://74labs.org">
+  <MAINGROUP id="IhZQcv" name="juce-laf-test">
+    <GROUP id="{C3D90AD9-5F5A-5901-A60E-B6C325DAEFD8}" name="Resources">
+      <FILE id="ZyBzeJ" name="SilverColour_Knob.knob" compile="0" resource="1"
+            file="Resources/SilverColour_Knob.knob"/>
+      <FILE id="xhBjPA" name="knobstrip.png" compile="0" resource="1" file="Resources/knobstrip.png"/>
+    </GROUP>
+    <GROUP id="{7AC5B652-2FD5-415C-8A32-A9A3CDAA3EBF}" name="Source">
+      <FILE id="HrTWzz" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="oL36mW" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="DUpnvY" name="FlatLookAndFeel.cpp" compile="1" resource="0"
+            file="Source/FlatLookAndFeel.cpp"/>
+      <FILE id="hlgIHe" name="FlatLookAndFeel.h" compile="0" resource="0"
+            file="Source/FlatLookAndFeel.h"/>
+      <FILE id="V07UEm" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2013 targetFolder="Builds/VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="juce-laf-test" binaryPath="$(SolutionDir)\bin\$(PlatformShortName)\$(Configuration)\\"
+                       intermediatesPath="$(SolutionDir)\tmp\$(PlatformShortName)\$(Configuration)\\"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="2" targetName="juce-laf-test" binaryPath="$(SolutionDir)\bin\$(PlatformShortName)\$(Configuration)\\"
+                       intermediatesPath="$(SolutionDir)\tmp\$(PlatformShortName)\$(Configuration)\\"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="..\..\..\lib\juce-3.2.0\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="..\..\..\lib\juce-3.2.0\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\..\..\lib\juce-3.2.0\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\..\..\lib\juce-3.2.0\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\..\..\lib\juce-3.2.0\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\..\..\lib\juce-3.2.0\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="0" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="0" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="0" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="0" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="0" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="0" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
